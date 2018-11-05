@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5301DCB9218FE2860079AD7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCB8218FE2860079AD7B /* LoginViewController.swift */; };
+		5301DCBB218FE44B0079AD7B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCBA218FE44B0079AD7B /* MainViewController.swift */; };
+		5301DCBE218FE4CD0079AD7B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCBD218FE4CD0079AD7B /* ProfileViewController.swift */; };
+		5301DCC0218FE4FD0079AD7B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCBF218FE4FD0079AD7B /* SearchViewController.swift */; };
+		5301DCC2218FE5180079AD7B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCC1218FE5180079AD7B /* ShareViewController.swift */; };
+		5301DCC6218FE5770079AD7B /* PublicTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCC5218FE5770079AD7B /* PublicTripsViewController.swift */; };
+		5301DCC8218FE5CA0079AD7B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCC7218FE5CA0079AD7B /* RegisterViewController.swift */; };
+		5301DCCA218FE5D70079AD7B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCC9218FE5D70079AD7B /* AboutViewController.swift */; };
+		5301DCCC218FE84E0079AD7B /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5301DCCB218FE84E0079AD7B /* Logo.png */; };
+		5301DCDE218FF4FF0079AD7B /* Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 5301DCDB218FF4FE0079AD7B /* Profile.png */; };
+		5301DCDF218FF4FF0079AD7B /* World.png in Resources */ = {isa = PBXBuildFile; fileRef = 5301DCDC218FF4FE0079AD7B /* World.png */; };
+		5301DCE0218FF4FF0079AD7B /* Location.png in Resources */ = {isa = PBXBuildFile; fileRef = 5301DCDD218FF4FE0079AD7B /* Location.png */; };
+		5301DCE2218FF51F0079AD7B /* Car.png in Resources */ = {isa = PBXBuildFile; fileRef = 5301DCE1218FF51F0079AD7B /* Car.png */; };
 		53DCF795218EB2600097FA2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCF794218EB2600097FA2C /* AppDelegate.swift */; };
-		53DCF797218EB2600097FA2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCF796218EB2600097FA2C /* ViewController.swift */; };
 		53DCF79A218EB2600097FA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DCF798218EB2600097FA2C /* Main.storyboard */; };
 		53DCF79C218EB2620097FA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53DCF79B218EB2620097FA2C /* Assets.xcassets */; };
 		53DCF79F218EB2620097FA2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DCF79D218EB2620097FA2C /* LaunchScreen.storyboard */; };
@@ -34,9 +46,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5301DCB8218FE2860079AD7B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5301DCBA218FE44B0079AD7B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5301DCBD218FE4CD0079AD7B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5301DCBF218FE4FD0079AD7B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5301DCC1218FE5180079AD7B /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		5301DCC5218FE5770079AD7B /* PublicTripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTripsViewController.swift; sourceTree = "<group>"; };
+		5301DCC7218FE5CA0079AD7B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5301DCC9218FE5D70079AD7B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		5301DCCB218FE84E0079AD7B /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		5301DCDB218FF4FE0079AD7B /* Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Profile.png; path = ../../Assets/Profile.png; sourceTree = "<group>"; };
+		5301DCDC218FF4FE0079AD7B /* World.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = World.png; sourceTree = "<group>"; };
+		5301DCDD218FF4FE0079AD7B /* Location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Location.png; sourceTree = "<group>"; };
+		5301DCE1218FF51F0079AD7B /* Car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Car.png; sourceTree = "<group>"; };
+		5301DCE4218FF52B0079AD7B /* Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile.png; sourceTree = "<group>"; };
 		53DCF791218EB2600097FA2C /* Aventon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aventon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DCF794218EB2600097FA2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		53DCF796218EB2600097FA2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53DCF799218EB2600097FA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53DCF79B218EB2620097FA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53DCF79E218EB2620097FA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +99,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5301DCBC218FE47A0079AD7B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5301DCC9218FE5D70079AD7B /* AboutViewController.swift */,
+				5301DCC7218FE5CA0079AD7B /* RegisterViewController.swift */,
+				5301DCBF218FE4FD0079AD7B /* SearchViewController.swift */,
+				5301DCC5218FE5770079AD7B /* PublicTripsViewController.swift */,
+				5301DCC1218FE5180079AD7B /* ShareViewController.swift */,
+				5301DCBA218FE44B0079AD7B /* MainViewController.swift */,
+				5301DCB8218FE2860079AD7B /* LoginViewController.swift */,
+				5301DCBD218FE4CD0079AD7B /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5301DCE3218FF5290079AD7B /* BottomBarIcons */ = {
+			isa = PBXGroup;
+			children = (
+				5301DCDD218FF4FE0079AD7B /* Location.png */,
+				5301DCE4218FF52B0079AD7B /* Profile.png */,
+				5301DCDC218FF4FE0079AD7B /* World.png */,
+				5301DCE1218FF51F0079AD7B /* Car.png */,
+			);
+			path = BottomBarIcons;
+			sourceTree = "<group>";
+		};
 		53DCF788218EB2600097FA2C = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +149,14 @@
 			isa = PBXGroup;
 			children = (
 				53DCF794218EB2600097FA2C /* AppDelegate.swift */,
-				53DCF796218EB2600097FA2C /* ViewController.swift */,
+				5301DCBC218FE47A0079AD7B /* ViewControllers */,
 				53DCF798218EB2600097FA2C /* Main.storyboard */,
 				53DCF79B218EB2620097FA2C /* Assets.xcassets */,
+				5301DCCB218FE84E0079AD7B /* Logo.png */,
 				53DCF79D218EB2620097FA2C /* LaunchScreen.storyboard */,
 				53DCF7A0218EB2620097FA2C /* Info.plist */,
+				5301DCE3218FF5290079AD7B /* BottomBarIcons */,
+				5301DCDB218FF4FE0079AD7B /* Profile.png */,
 			);
 			path = Aventon;
 			sourceTree = "<group>";
@@ -229,8 +283,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5301DCE2218FF51F0079AD7B /* Car.png in Resources */,
+				5301DCE0218FF4FF0079AD7B /* Location.png in Resources */,
+				5301DCCC218FE84E0079AD7B /* Logo.png in Resources */,
+				5301DCDE218FF4FF0079AD7B /* Profile.png in Resources */,
 				53DCF79F218EB2620097FA2C /* LaunchScreen.storyboard in Resources */,
 				53DCF79C218EB2620097FA2C /* Assets.xcassets in Resources */,
+				5301DCDF218FF4FF0079AD7B /* World.png in Resources */,
 				53DCF79A218EB2600097FA2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53DCF797218EB2600097FA2C /* ViewController.swift in Sources */,
+				5301DCC2218FE5180079AD7B /* ShareViewController.swift in Sources */,
+				5301DCC0218FE4FD0079AD7B /* SearchViewController.swift in Sources */,
+				5301DCBB218FE44B0079AD7B /* MainViewController.swift in Sources */,
+				5301DCCA218FE5D70079AD7B /* AboutViewController.swift in Sources */,
+				5301DCC8218FE5CA0079AD7B /* RegisterViewController.swift in Sources */,
+				5301DCB9218FE2860079AD7B /* LoginViewController.swift in Sources */,
+				5301DCBE218FE4CD0079AD7B /* ProfileViewController.swift in Sources */,
 				53DCF795218EB2600097FA2C /* AppDelegate.swift in Sources */,
+				5301DCC6218FE5770079AD7B /* PublicTripsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +506,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mx.danteese.Aventon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,7 +524,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mx.danteese.Aventon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
