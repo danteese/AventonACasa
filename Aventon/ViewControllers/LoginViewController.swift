@@ -10,9 +10,17 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var UserField: UITextField!
+    @IBOutlet weak var PasswordField: UITextField!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     override func viewDidLoad() {
+    
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +29,14 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func goToRegister(_ sender: Any) {
+        let registerView = self.storyboard?.instantiateViewController(withIdentifier: "registro") as! RegisterViewController
 
+            // If we need the new information for the delegate
+        self.navigationController?.pushViewController(registerView, animated: true)
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -37,6 +52,11 @@ class LoginViewController: UIViewController {
         
         present(mainViewController!, animated: true, completion: nil)
         
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+    self.navigationController?.setNavigationBarHidden   (false, animated: animated)
+        super.viewWillDisappear(animated)
     }
     
 }
