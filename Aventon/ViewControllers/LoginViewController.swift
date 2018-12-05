@@ -30,9 +30,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         PasswordField.isSecureTextEntry = true
         
         
-        let appdelegate = UIApplication.shared.delegate as! AppDelegate
-        print(appdelegate.users.usuarios.count)
-        
         // Push up the view when keyboard appears
         // https://stackoverflow.com/questions/26070242/move-view-with-keyboard-using-swift
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)

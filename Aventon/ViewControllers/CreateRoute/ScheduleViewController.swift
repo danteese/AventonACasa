@@ -16,6 +16,8 @@ class ScheduleViewController: UIViewController, UITextFieldDelegate {
     var datepicker = UIDatePicker()
     
     @IBOutlet weak var NombreDeEvento: UITextField!
+    
+    var viaje : Viaje!
 
     let eventStore = EKEventStore();
     
@@ -93,9 +95,23 @@ class ScheduleViewController: UIViewController, UITextFieldDelegate {
             try eventStore.save(reminder,
                                 commit: true)
             
-            let alert = UIAlertController(title: "Recordatorio se agregó", message: "Fecha: " + formatDate(date: datepicker.date) + ". Sonará en 10 min.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Viaje agregado.", message: "Fecha: " + formatDate(date: datepicker.date) + ". Sonará en 10 min.", preferredStyle: .alert)
             
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (alert) -> Void in
+                let appdelegate = UIApplication.shared.delegate as! AppDelegate
+                let usuarios = appdelegate.users
+                self.viaje.fecha = Date()
+                self.viaje.lugar = self.NombreDeEvento.text ?? "Viaje (Aventón)"
+                
+                usuarios.infoUsuarioSeleccionado()!.agregaViaje(viaje: self.viaje)
+                
+                print(usuarios.infoUsuarioSeleccionado()!.viajes.count)
+                
+                self.navigationController?.popToRootViewController(animated: true)
+                self.dismiss(animated: true, completion: nil)
+                
+            }))
+
             
             self.present(alert, animated: true)
             

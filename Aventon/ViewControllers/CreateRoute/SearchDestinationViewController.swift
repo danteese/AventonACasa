@@ -21,8 +21,10 @@ class SearchDestinationViewController: UIViewController, DelegadoSitio {
         print("New site")
         // Put in the destination label
         DestinoLabel.text = self.sitioSeleccionado.name
+        viaje.coordenadaDestino = SitioRecibido.placemark.coordinate
     }
     
+    var viaje : Viaje!
     
 
     var sitioSeleccionado : MKMapItem = MKMapItem() {
@@ -105,5 +107,14 @@ class SearchDestinationViewController: UIViewController, DelegadoSitio {
         let region = MKCoordinateRegionMake(coordinate, span)
         self.Mapa.setRegion(region, animated: true)
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let detallesvc = segue.destination as! ScheduleViewController
+        detallesvc.viaje = self.viaje
+        
+    }
 
+    
 }

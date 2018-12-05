@@ -90,7 +90,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
-    
+
     @objc func keyboardWillHide(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y != 0{
@@ -98,7 +98,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
-    
+
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -150,6 +150,17 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBAction func Registrar(_ sender: Any) {
+        
+        // Create user
+        
+        let appdelegate = UIApplication.shared.delegate as! AppDelegate
+        let usuarios = appdelegate.users
+        
+        usuarios.agregarUsuario(usuario: Usuario(nombre: Nombre.text!, apellido: Apellido.text!, correo: Correo.text!, id_ibero: Cuenta.text!, uuid: UUID().uuidString, password: Password.text!))
+        
+        print("Usuario creado")
+        
+        print(usuarios.usuarios.count)
         
         let alert = UIAlertController(title: "Registro completado", message: "Bienvenido " + NuevoUsuario.nombre + ".", preferredStyle: .alert)
         

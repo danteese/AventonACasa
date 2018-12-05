@@ -20,6 +20,8 @@ struct Viaje {
     var coordenadaDestino:CLLocationCoordinate2D
     var fecha:Date
     var uuid:String
+    var lugar:String
+    var isDrive:Bool
 }
 
 

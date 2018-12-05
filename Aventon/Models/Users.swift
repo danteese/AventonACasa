@@ -8,6 +8,13 @@
 
 import Foundation
 
+
+struct ViajeModificado {
+    var Nombre:String
+    var Viaje:Viaje
+    var Coche:Coche
+}
+
 class Usuarios:NSObject {
     
     var usuarios = [Usuario]()
@@ -51,6 +58,22 @@ class Usuarios:NSObject {
     
     func dameUsuarios() -> [Usuario] {
         return self.usuarios
+    }
+    
+    func obtenerViajesDeConductores() -> [ViajeModificado] {
+        
+        var viajesParaTabla:[ViajeModificado] = []
+        
+        for user in self.usuarios{
+            for viaje in user.viajes {
+                if ((viaje.isDrive == true) && (viaje.fecha >= Date())) {
+                    let mod = ViajeModificado(Nombre: user.nombre, Viaje: viaje, Coche: user.coches[0])
+                    viajesParaTabla.append(mod)
+                }
+            }
+        }
+        
+        return viajesParaTabla
     }
     
 }

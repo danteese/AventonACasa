@@ -22,8 +22,10 @@ class SearchViewController: UIViewController, DelegadoSitio, CLLocationManagerDe
         print("New site")
         // Put in the destination label
         DestinoLabel.text = self.sitioSeleccionado.name
-        
+        nuevoViaje.coordenadaOrigen = SitioRecibido.placemark.coordinate
     }
+    
+    var nuevoViaje : Viaje!
     
     
     @IBOutlet weak var Mapa: MKMapView!
@@ -59,6 +61,7 @@ class SearchViewController: UIViewController, DelegadoSitio, CLLocationManagerDe
         manager.requestWhenInUseAuthorization()
         manager.desiredAccuracy = kCLLocationAccuracyBest
         
+        print(self.nuevoViaje)
     }
     
     
@@ -146,6 +149,16 @@ class SearchViewController: UIViewController, DelegadoSitio, CLLocationManagerDe
         let region = MKCoordinateRegionMake(coordinate, span)
         self.Mapa.setRegion(region, animated: true)
     }
+    
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destinovc = segue.destination as! SearchDestinationViewController
+        destinovc.viaje = self.nuevoViaje
+        
+    }
+    
     
 
 }

@@ -31,14 +31,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Primer usuario
         let driver1 = Usuario(nombre: "Yohana", apellido: "Temple", correo: "ohmytemple@gmail.com", id_ibero: "194400-0", uuid: UUID().uuidString, password: "holamundo")
         let coche1 = Coche(placas: "DF-123-00", anio: "2010", cajuela: true, modelo: "Nissan Versa", uuid:UUID().uuidString)
-        let viaje1 = Viaje(coordenadaOrigen: CLLocationCoordinate2D(latitude: 19.3640, longitude: -99.2651), coordenadaDestino: CLLocationCoordinate2D(latitude: 19.504401, longitude: -99.132485), fecha: Date(), uuid: UUID().uuidString)
+        let viaje1 = Viaje(coordenadaOrigen: CLLocationCoordinate2D(latitude: 19.3640, longitude: -99.2651), coordenadaDestino: CLLocationCoordinate2D(latitude: 19.504401, longitude: -99.132485), fecha: Calendar.current.date(byAdding: .day, value: 2, to: Date())!, uuid: UUID().uuidString,  lugar: "Test", isDrive: true)
+        let viaje11 = Viaje(coordenadaOrigen: CLLocationCoordinate2D(latitude: 19.406275, longitude: -99.195333), coordenadaDestino: CLLocationCoordinate2D(latitude: 19.504401, longitude: -99.132485), fecha: Calendar.current.date(byAdding: .day, value: 1, to: Date())!, uuid: UUID().uuidString,  lugar: "Test", isDrive: true)
         driver1.viajes.append(viaje1)
+        driver1.viajes.append(viaje11)
         driver1.coches.append(coche1)
         
         
         let driver2 = Usuario(nombre: "Jesus", apellido: "Fragoso", correo: "jesus.fragoso@gmail.com", id_ibero: "199199-2", uuid: UUID().uuidString, password: "hacker")
         let coche2 = Coche(placas: "DF-123-01", anio: "2015", cajuela: true, modelo: "Renault Duster", uuid:UUID().uuidString)
-        let viaje2 = Viaje(coordenadaOrigen: CLLocationCoordinate2D(latitude: 19.436410, longitude: -99.071973), coordenadaDestino: CLLocationCoordinate2D(latitude: 19.370390, longitude: -99.263901), fecha: Date(), uuid: UUID().uuidString)
+        let viaje2 = Viaje(coordenadaOrigen: CLLocationCoordinate2D(latitude: 19.436410, longitude: -99.071973), coordenadaDestino: CLLocationCoordinate2D(latitude: 19.370390, longitude: -99.263901), fecha: Calendar.current.date(byAdding: .day, value: 3, to: Date())!, uuid: UUID().uuidString, lugar: "Test", isDrive: true)
         driver2.viajes.append(viaje2)
         driver2.coches.append(coche2)
         
