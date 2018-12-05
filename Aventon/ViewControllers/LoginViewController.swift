@@ -8,20 +8,34 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
+    
 
     @IBOutlet weak var UserField: UITextField!
     @IBOutlet weak var PasswordField: UITextField!
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
     
+
     override func viewDidLoad() {
     
         super.viewDidLoad()
         
+        UserField.delegate = self
+        PasswordField.delegate = self
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+            self.setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,13 +43,6 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func goToRegister(_ sender: Any) {
-        let registerView = self.storyboard?.instantiateViewController(withIdentifier: "registro") as! RegisterViewController
-
-            // If we need the new information for the delegate
-        self.navigationController?.pushViewController(registerView, animated: true)
-        
-    }
     
     /*
     // MARK: - Navigation
@@ -55,7 +62,7 @@ class LoginViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-    self.navigationController?.setNavigationBarHidden   (false, animated: animated)
+        self.navigationController?.setNavigationBarHidden   (false, animated: animated)
         super.viewWillDisappear(animated)
     }
     

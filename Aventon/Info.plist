@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Para generar una alarma</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Necesito tu ubicación para pedir el coche más cercano.</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Para poder recordarte de tus viajes pendientes.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

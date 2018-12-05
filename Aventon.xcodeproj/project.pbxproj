@@ -12,7 +12,6 @@
 		5301DCBE218FE4CD0079AD7B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCBD218FE4CD0079AD7B /* ProfileViewController.swift */; };
 		5301DCC0218FE4FD0079AD7B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCBF218FE4FD0079AD7B /* SearchViewController.swift */; };
 		5301DCC2218FE5180079AD7B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCC1218FE5180079AD7B /* ShareViewController.swift */; };
-		5301DCC6218FE5770079AD7B /* PublicTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCC5218FE5770079AD7B /* PublicTripsViewController.swift */; };
 		5301DCC8218FE5CA0079AD7B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCC7218FE5CA0079AD7B /* RegisterViewController.swift */; };
 		5301DCCA218FE5D70079AD7B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5301DCC9218FE5D70079AD7B /* AboutViewController.swift */; };
 		5301DCCC218FE84E0079AD7B /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5301DCCB218FE84E0079AD7B /* Logo.png */; };
@@ -20,6 +19,15 @@
 		5301DCDF218FF4FF0079AD7B /* World.png in Resources */ = {isa = PBXBuildFile; fileRef = 5301DCDC218FF4FE0079AD7B /* World.png */; };
 		5301DCE0218FF4FF0079AD7B /* Location.png in Resources */ = {isa = PBXBuildFile; fileRef = 5301DCDD218FF4FE0079AD7B /* Location.png */; };
 		5301DCE2218FF51F0079AD7B /* Car.png in Resources */ = {isa = PBXBuildFile; fileRef = 5301DCE1218FF51F0079AD7B /* Car.png */; };
+		5305B28821B4CB3400ED31EE /* SearchDirectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305B28721B4CB3400ED31EE /* SearchDirectionsTableViewController.swift */; };
+		5305B28A21B4D15C00ED31EE /* SiteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305B28921B4D15C00ED31EE /* SiteTableViewCell.swift */; };
+		530A31BE21B5B731003C3C78 /* CreateRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530A31BD21B5B731003C3C78 /* CreateRouteViewController.swift */; };
+		530A31C021B63A63003C3C78 /* SearchDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530A31BF21B63A63003C3C78 /* SearchDestinationViewController.swift */; };
+		530A31C421B659F3003C3C78 /* Art.png in Resources */ = {isa = PBXBuildFile; fileRef = 530A31C321B659F2003C3C78 /* Art.png */; };
+		530A31C621B6CBC7003C3C78 /* City.png in Resources */ = {isa = PBXBuildFile; fileRef = 530A31C521B6CBC6003C3C78 /* City.png */; };
+		530A31C821B6CDE4003C3C78 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530A31C721B6CDE4003C3C78 /* ScheduleViewController.swift */; };
+		53C16A7A21B730FE00FCA4C6 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C16A7921B730FE00FCA4C6 /* UserModel.swift */; };
+		53C16A7D21B7471E00FCA4C6 /* ViajesPublicosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C16A7C21B7471E00FCA4C6 /* ViajesPublicosTableViewController.swift */; };
 		53DCF795218EB2600097FA2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCF794218EB2600097FA2C /* AppDelegate.swift */; };
 		53DCF79A218EB2600097FA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DCF798218EB2600097FA2C /* Main.storyboard */; };
 		53DCF79C218EB2620097FA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53DCF79B218EB2620097FA2C /* Assets.xcassets */; };
@@ -51,7 +59,6 @@
 		5301DCBD218FE4CD0079AD7B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5301DCBF218FE4FD0079AD7B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		5301DCC1218FE5180079AD7B /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
-		5301DCC5218FE5770079AD7B /* PublicTripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicTripsViewController.swift; sourceTree = "<group>"; };
 		5301DCC7218FE5CA0079AD7B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5301DCC9218FE5D70079AD7B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		5301DCCB218FE84E0079AD7B /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
@@ -60,6 +67,15 @@
 		5301DCDD218FF4FE0079AD7B /* Location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Location.png; sourceTree = "<group>"; };
 		5301DCE1218FF51F0079AD7B /* Car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Car.png; sourceTree = "<group>"; };
 		5301DCE4218FF52B0079AD7B /* Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile.png; sourceTree = "<group>"; };
+		5305B28721B4CB3400ED31EE /* SearchDirectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDirectionsTableViewController.swift; sourceTree = "<group>"; };
+		5305B28921B4D15C00ED31EE /* SiteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteTableViewCell.swift; sourceTree = "<group>"; };
+		530A31BD21B5B731003C3C78 /* CreateRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRouteViewController.swift; sourceTree = "<group>"; };
+		530A31BF21B63A63003C3C78 /* SearchDestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDestinationViewController.swift; sourceTree = "<group>"; };
+		530A31C321B659F2003C3C78 /* Art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Art.png; sourceTree = "<group>"; };
+		530A31C521B6CBC6003C3C78 /* City.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = City.png; sourceTree = "<group>"; };
+		530A31C721B6CDE4003C3C78 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		53C16A7921B730FE00FCA4C6 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		53C16A7C21B7471E00FCA4C6 /* ViajesPublicosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajesPublicosTableViewController.swift; sourceTree = "<group>"; };
 		53DCF791218EB2600097FA2C /* Aventon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aventon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DCF794218EB2600097FA2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53DCF799218EB2600097FA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,13 +119,14 @@
 			isa = PBXGroup;
 			children = (
 				5301DCC9218FE5D70079AD7B /* AboutViewController.swift */,
-				5301DCC7218FE5CA0079AD7B /* RegisterViewController.swift */,
-				5301DCBF218FE4FD0079AD7B /* SearchViewController.swift */,
-				5301DCC5218FE5770079AD7B /* PublicTripsViewController.swift */,
-				5301DCC1218FE5180079AD7B /* ShareViewController.swift */,
-				5301DCBA218FE44B0079AD7B /* MainViewController.swift */,
+				53C16A7C21B7471E00FCA4C6 /* ViajesPublicosTableViewController.swift */,
+				530A31CA21B6DBF5003C3C78 /* CreateRoute */,
 				5301DCB8218FE2860079AD7B /* LoginViewController.swift */,
+				5301DCBA218FE44B0079AD7B /* MainViewController.swift */,
 				5301DCBD218FE4CD0079AD7B /* ProfileViewController.swift */,
+				5301DCC7218FE5CA0079AD7B /* RegisterViewController.swift */,
+				530A31C921B6DBD4003C3C78 /* SearchDirections */,
+				5301DCC1218FE5180079AD7B /* ShareViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -123,6 +140,34 @@
 				5301DCE1218FF51F0079AD7B /* Car.png */,
 			);
 			path = BottomBarIcons;
+			sourceTree = "<group>";
+		};
+		530A31C921B6DBD4003C3C78 /* SearchDirections */ = {
+			isa = PBXGroup;
+			children = (
+				5305B28921B4D15C00ED31EE /* SiteTableViewCell.swift */,
+				5305B28721B4CB3400ED31EE /* SearchDirectionsTableViewController.swift */,
+			);
+			path = SearchDirections;
+			sourceTree = "<group>";
+		};
+		530A31CA21B6DBF5003C3C78 /* CreateRoute */ = {
+			isa = PBXGroup;
+			children = (
+				530A31BF21B63A63003C3C78 /* SearchDestinationViewController.swift */,
+				530A31BD21B5B731003C3C78 /* CreateRouteViewController.swift */,
+				530A31C721B6CDE4003C3C78 /* ScheduleViewController.swift */,
+				5301DCBF218FE4FD0079AD7B /* SearchViewController.swift */,
+			);
+			path = CreateRoute;
+			sourceTree = "<group>";
+		};
+		53C16A7B21B7310300FCA4C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53C16A7921B730FE00FCA4C6 /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		53DCF788218EB2600097FA2C = {
@@ -151,10 +196,13 @@
 				53DCF794218EB2600097FA2C /* AppDelegate.swift */,
 				5301DCBC218FE47A0079AD7B /* ViewControllers */,
 				53DCF798218EB2600097FA2C /* Main.storyboard */,
+				53C16A7B21B7310300FCA4C6 /* Models */,
 				53DCF79B218EB2620097FA2C /* Assets.xcassets */,
 				5301DCCB218FE84E0079AD7B /* Logo.png */,
 				53DCF79D218EB2620097FA2C /* LaunchScreen.storyboard */,
 				53DCF7A0218EB2620097FA2C /* Info.plist */,
+				530A31C321B659F2003C3C78 /* Art.png */,
+				530A31C521B6CBC6003C3C78 /* City.png */,
 				5301DCE3218FF5290079AD7B /* BottomBarIcons */,
 				5301DCDB218FF4FE0079AD7B /* Profile.png */,
 			);
@@ -283,7 +331,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530A31C421B659F3003C3C78 /* Art.png in Resources */,
 				5301DCE2218FF51F0079AD7B /* Car.png in Resources */,
+				530A31C621B6CBC7003C3C78 /* City.png in Resources */,
 				5301DCE0218FF4FF0079AD7B /* Location.png in Resources */,
 				5301DCCC218FE84E0079AD7B /* Logo.png in Resources */,
 				5301DCDE218FF4FF0079AD7B /* Profile.png in Resources */,
@@ -315,15 +365,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530A31C021B63A63003C3C78 /* SearchDestinationViewController.swift in Sources */,
 				5301DCC2218FE5180079AD7B /* ShareViewController.swift in Sources */,
+				5305B28A21B4D15C00ED31EE /* SiteTableViewCell.swift in Sources */,
 				5301DCC0218FE4FD0079AD7B /* SearchViewController.swift in Sources */,
 				5301DCBB218FE44B0079AD7B /* MainViewController.swift in Sources */,
+				530A31C821B6CDE4003C3C78 /* ScheduleViewController.swift in Sources */,
+				5305B28821B4CB3400ED31EE /* SearchDirectionsTableViewController.swift in Sources */,
 				5301DCCA218FE5D70079AD7B /* AboutViewController.swift in Sources */,
+				53C16A7D21B7471E00FCA4C6 /* ViajesPublicosTableViewController.swift in Sources */,
 				5301DCC8218FE5CA0079AD7B /* RegisterViewController.swift in Sources */,
 				5301DCB9218FE2860079AD7B /* LoginViewController.swift in Sources */,
+				530A31BE21B5B731003C3C78 /* CreateRouteViewController.swift in Sources */,
 				5301DCBE218FE4CD0079AD7B /* ProfileViewController.swift in Sources */,
 				53DCF795218EB2600097FA2C /* AppDelegate.swift in Sources */,
-				5301DCC6218FE5770079AD7B /* PublicTripsViewController.swift in Sources */,
+				53C16A7A21B730FE00FCA4C6 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -483,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
