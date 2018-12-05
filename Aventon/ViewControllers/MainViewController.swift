@@ -9,6 +9,8 @@
 import UIKit
 
 class MainViewController: UITabBarController {
+    
+    var usuarios : Usuarios!
 
     override func viewDidLoad() {
         super.viewDidLoad()

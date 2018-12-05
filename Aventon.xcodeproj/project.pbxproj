@@ -28,6 +28,7 @@
 		530A31C821B6CDE4003C3C78 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530A31C721B6CDE4003C3C78 /* ScheduleViewController.swift */; };
 		53C16A7A21B730FE00FCA4C6 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C16A7921B730FE00FCA4C6 /* UserModel.swift */; };
 		53C16A7D21B7471E00FCA4C6 /* ViajesPublicosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C16A7C21B7471E00FCA4C6 /* ViajesPublicosTableViewController.swift */; };
+		53C16A7F21B7619900FCA4C6 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C16A7E21B7619900FCA4C6 /* Users.swift */; };
 		53DCF795218EB2600097FA2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCF794218EB2600097FA2C /* AppDelegate.swift */; };
 		53DCF79A218EB2600097FA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53DCF798218EB2600097FA2C /* Main.storyboard */; };
 		53DCF79C218EB2620097FA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53DCF79B218EB2620097FA2C /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		530A31C721B6CDE4003C3C78 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		53C16A7921B730FE00FCA4C6 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		53C16A7C21B7471E00FCA4C6 /* ViajesPublicosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajesPublicosTableViewController.swift; sourceTree = "<group>"; };
+		53C16A7E21B7619900FCA4C6 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		53DCF791218EB2600097FA2C /* Aventon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aventon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DCF794218EB2600097FA2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53DCF799218EB2600097FA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				53C16A7921B730FE00FCA4C6 /* UserModel.swift */,
+				53C16A7E21B7619900FCA4C6 /* Users.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				530A31C821B6CDE4003C3C78 /* ScheduleViewController.swift in Sources */,
 				5305B28821B4CB3400ED31EE /* SearchDirectionsTableViewController.swift in Sources */,
 				5301DCCA218FE5D70079AD7B /* AboutViewController.swift in Sources */,
+				53C16A7F21B7619900FCA4C6 /* Users.swift in Sources */,
 				53C16A7D21B7471E00FCA4C6 /* ViajesPublicosTableViewController.swift in Sources */,
 				5301DCC8218FE5CA0079AD7B /* RegisterViewController.swift in Sources */,
 				5301DCB9218FE2860079AD7B /* LoginViewController.swift in Sources */,

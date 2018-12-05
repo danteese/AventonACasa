@@ -7,6 +7,35 @@
 //
 
 import Foundation
+import MapKit
+import CoreLocation
+
+/*
+ * Estructura Viaje
+ * Sirve para almacenar los datos del viaje.
+ * rel - es la relación con la persona.
+ */
+struct Viaje {
+    var coordenadaOrigen:CLLocationCoordinate2D
+    var coordenadaDestino:CLLocationCoordinate2D
+    var fecha:Date
+    var uuid:String
+}
+
+
+/*
+ * Estructura Coche
+ * Sirve para almacenar los datos del usuario.
+ * rel - es la relación con la persona.
+ */
+struct Coche {
+    var placas:String
+    var anio:String
+    var cajuela:Bool
+    var modelo:String
+    var uuid:String
+}
+
 
 class Usuario: NSObject {
     var nombre:String
@@ -16,6 +45,9 @@ class Usuario: NSObject {
     var telefono:String
     var id_pasajero:String
     var password:String
+    
+    var viajes = [Viaje]()
+    var coches = [Coche]()
     
     init(nombre: String, apellido: String, correo: String, id_ibero:String, uuid:String?, password: String ) {
         self.nombre = nombre
@@ -45,5 +77,59 @@ class Usuario: NSObject {
             self.init(nombre: "Prueba", apellido: "Prueba", correo: "prueba@ibero.mx", id_ibero: "0000-00", uuid: nil, password: "1234")
         }
     }
+    
+    /*
+     * Funciones CRUD para viajes
+     */
+    
+    @discardableResult func agregaViaje(viaje: Viaje) -> Viaje {
+        self.viajes.append(viaje)
+        return viaje
+    }
+    
+    func borraViaje(viajeAEliminar: Viaje){
+        var count = 0
+        for viaje in viajes {
+            if viaje.uuid == viajeAEliminar.uuid {
+                viajes.remove(at: count)
+                return
+            }
+            count += 1
+        }
+        
+    }
+    
+    func listaViajesDeUsuario() -> [Viaje]{
+        return self.viajes
+        
+    }
+    
+    /*
+     * Funciones CRUD para coches
+     */
+    
+    @discardableResult func agregaCoches(coche: Coche) -> Coche {
+        self.coches.append(coche)
+        return coche
+    }
+    
+    func borraCoche(cocheAEliminar: Coche) {
+        var count = 0
+        for coche in coches {
+            if coche.uuid == cocheAEliminar.uuid {
+                coches.remove(at: count)
+                return
+            }
+            count += 1
+        }
+    }
+    
+    func listaDeCoches() -> [Coche]{
+        return self.coches
+        
+    }
+    
 }
+
+
 

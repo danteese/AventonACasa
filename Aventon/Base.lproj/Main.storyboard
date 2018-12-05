@@ -264,7 +264,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -291,7 +291,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -632,15 +632,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOw-Dl-MDz">
-                                <rect key="frame" x="29" y="151" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elaborada por:  Dante Bazaldua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOw-Dl-MDz">
+                                <rect key="frame" x="30" y="151" width="315" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desarrollo de Aplicaciones Móviles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gv5-Td-H2X">
+                                <rect key="frame" x="30" y="180" width="315" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Otoño 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjG-S1-UJc">
+                                <rect key="frame" x="30" y="209" width="315" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GjG-S1-UJc" firstAttribute="top" secondItem="Gv5-Td-H2X" secondAttribute="bottom" constant="5" id="0Xi-kJ-eC2"/>
+                            <constraint firstItem="Hlf-rh-usa" firstAttribute="trailing" secondItem="Gv5-Td-H2X" secondAttribute="trailing" constant="30" id="AUv-0y-L6t"/>
+                            <constraint firstItem="sOw-Dl-MDz" firstAttribute="leading" secondItem="Hlf-rh-usa" secondAttribute="leading" constant="30" id="LsG-pc-FTI"/>
+                            <constraint firstItem="Hlf-rh-usa" firstAttribute="trailing" secondItem="GjG-S1-UJc" secondAttribute="trailing" constant="30" id="MKw-9P-645"/>
+                            <constraint firstItem="Gv5-Td-H2X" firstAttribute="leading" secondItem="Hlf-rh-usa" secondAttribute="leading" constant="30" id="YY2-Tt-sc5"/>
+                            <constraint firstItem="sOw-Dl-MDz" firstAttribute="top" secondItem="Hlf-rh-usa" secondAttribute="top" constant="35" id="Z07-sm-p6j"/>
+                            <constraint firstItem="Gv5-Td-H2X" firstAttribute="top" secondItem="sOw-Dl-MDz" secondAttribute="bottom" constant="5" id="bKa-5p-QQI"/>
+                            <constraint firstItem="GjG-S1-UJc" firstAttribute="leading" secondItem="Hlf-rh-usa" secondAttribute="leading" constant="30" id="fz3-1A-XCd"/>
+                            <constraint firstItem="Hlf-rh-usa" firstAttribute="trailing" secondItem="sOw-Dl-MDz" secondAttribute="trailing" constant="30" id="lph-Oh-aHW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hlf-rh-usa"/>
                     </view>
                     <navigationItem key="navigationItem" title="Acerca de" id="jgf-zu-EaI"/>

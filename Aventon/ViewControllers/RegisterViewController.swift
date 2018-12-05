@@ -73,9 +73,30 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         for textfield in textFields! {
             textfield.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         }
+        
+        // Push up the view when keyboard appears
+        // https://stackoverflow.com/questions/26070242/move-view-with-keyboard-using-swift
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
 
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= (keyboardSize.height/2)
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += (keyboardSize.height/2)
+            }
+        }
     }
     
     
@@ -99,27 +120,27 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         RegisterBtn.isEnabled = false
         
         guard let name = textFields![0].text, name != "" else {
-            print("textField 1 is empty")
+//            print("textField 1 is empty")
             return
         }
         
         guard let lastName = textFields![1].text, lastName != "" else {
-            print("textField 2 is empty")
+//            print("textField 2 is empty")
             return
         }
         
         guard let email = textFields![2].text, email != "" else {
-            print("textField 3 is empty")
+//            print("textField 3 is empty")
             return
         }
         
         guard let account = textFields![3].text, account != "" else {
-            print("textField 4 is empty")
+//            print("textField 4 is empty")
             return
         }
         
         guard let password = textFields![4].text, password != "" else {
-            print("Textfield 5 is empty")
+//            print("Textfield 5 is empty")
             return
         }
         
